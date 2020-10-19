@@ -167,6 +167,12 @@
 			Calculating Square:
 			<input type="text" id="num" placeholder="Type in a number"> <sup> 2 </sup> =
 			<label id="squareresult"> ? </label>
+      <script>
+        var valueIn = parseInt(doucment.getElementById('num').value();
+        var value = Math.sqrt('valueIn');
+        document.Write('squareresult');
+
+      </script>
 
 		</div>
 
@@ -180,8 +186,16 @@
 
 			<input type="button" id="tryit" value="Click and Display">​
 
-			<div id="m1">​
+			<div id="message1">​
 			</div>
+      <script>
+
+        function convertHTML(){
+          var inputcode = document.getElementById('code').value();
+          document.getElementById('message1').innerHTML = inputcode;
+        }
+
+      document.getElementById('tryit').addEventListener('click', convertHTML)
 
 
 		</div>
